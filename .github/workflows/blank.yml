@@ -48,10 +48,11 @@ jobs:
           echo test, and deploy your project.
       
       - name: Test imput variables
-        run: |
-          echo "customer_env = $CUSTOMER_ENV"
-          echo "server = $SERVER"
         env:
           CUSTOMER_ENV: ${{ inputs.customer_env }}
           SERVER: ${{ customer_env.server }}
+        run: |
+          echo "customer_env = $CUSTOMER_ENV"
+          echo "server = $SERVER"
+
       
