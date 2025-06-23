@@ -50,7 +50,7 @@ jobs:
       - name: Test imput variables
         env:
           CUSTOMER_ENV: ${{ inputs.customer_env }}
-          SERVER: ${{ customer_env.server }}
+          SERVER: ${{ inputs.server }}
         run: |
           echo "customer_env = $CUSTOMER_ENV"
           echo "server = $SERVER"
