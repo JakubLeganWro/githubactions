@@ -22,10 +22,7 @@ on:
         type: string
       customer_env:
         type: choice
-        options:
-          - Belgia
-          - Polska
-          - Francja
+        options: [ "Belgia", "Polska", "Francja", "USA"]
         default: Polska
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
