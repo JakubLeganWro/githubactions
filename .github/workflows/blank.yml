@@ -41,7 +41,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Listing AFTER
         run:  ls -ltra
-      -name: Kim jestem
+        
+      - name: Kim jestem
         run: |
           whoami
           id
