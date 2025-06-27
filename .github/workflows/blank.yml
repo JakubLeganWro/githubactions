@@ -42,7 +42,7 @@ jobs:
       - name: Listing AFTER
         run: |
           ls -ltra
-          whoami
+          sudo su - root -c "whoami"
           id
       - name: Running FAJNE ECHO
         run: |
