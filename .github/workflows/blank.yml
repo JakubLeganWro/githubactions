@@ -42,8 +42,8 @@ jobs:
       - name: Listing AFTER
         run: |
           ls -ltra
-          sudo su - root -c "whoami"
-          id
+          sudo su - root -c "whoami; id"
+
       - name: Running FAJNE ECHO
         run: |
           chmod 744 ./fajne_echo2.sh
