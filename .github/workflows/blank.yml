@@ -40,7 +40,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       - name: Listing AFTER
-        run: ls -ltra
+        run: |
+          ls -ltra
+          whoami
+          id
       - name: Running FAJNE ECHO
         run: |
           chmod 744 ./fajne_echo2.sh
