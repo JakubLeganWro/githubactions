@@ -41,6 +41,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Listing AFTER
         run: ls -ltra
+      - name: Running FAJNE ECHO
+        run: |
+          chmod 744 ./fajne_echo2.sh
+          ./fajne_echo2.sh
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
